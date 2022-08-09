@@ -1,23 +1,20 @@
 <template>
   <div id="app">
-    <BaseButton
-      data-selector="TEST"
-    >
-      but
-    </BaseButton>
+    <HelloWorld msg="123"/>
   </div>
 </template>
 
 <script lang="ts">
 import { Component, Vue } from 'vue-property-decorator';
-import { BaseButton } from './components';
+import { HelloWorld } from 'vue-ui-final';
 
 @Component({
   components: {
-    BaseButton,
+    HelloWorld,
   },
 })
-export default class App extends Vue {}
+export default class App extends Vue {
+}
 </script>
 
 <style lang="scss">
